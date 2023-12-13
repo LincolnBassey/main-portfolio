@@ -1,0 +1,43 @@
+.header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  
+  box-shadow:  1px 2px 10px #02ffaf2a;
+
+  .nav-off{
+ 
+    transition: all 1.2s ease-in;
+    box-shadow: none;
+    color: black;
+  }
+
+
+  
+  
+
+  .nav-on{
+    transition: all .8s ease-in;
+    color: rgb(255, 242, 242);
+    box-shadow: 1px 1px 13px #02ffaf5a;
+    background-color: black
+  }
+// ==========Screen width==================
+  @media (min-width:768px) {
+    .nav-on{
+      transition: none;
+      box-shadow: none;
+      background-color: black;
+    }
+    .nav-off{
+      color: white;
+      transition: none;
+    }
+
+  }
+
+}
+
+

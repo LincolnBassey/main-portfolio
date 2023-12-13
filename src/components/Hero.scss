@@ -1,0 +1,27 @@
+.hero {
+
+
+  
+  .left {
+    flex: 0.5;
+    
+  }
+  .right {
+    flex: 0.5;
+  height: 100%;
+
+    .hero-img { 
+  
+      animation: move 4s infinite alternate;
+    }
+    @keyframes move {
+      50% {
+        
+      transform: translate3d(20px ,-50px ,90px);}
+    
+    
+      }
+
+
+  }
+}

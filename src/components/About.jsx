@@ -1,0 +1,125 @@
+import "./About.scss";
+import Underline from "./dynamicstyle/Underline";
+import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import Header from "./Header";
+
+export default function About() {
+  return (
+    <>
+      <Header />
+      <div
+        className="about bg-black relative md:h-[90vh] h-[108vh] flex flex-col justify-center items-center overflow-hidden px-[2px] md:px-0"
+        id=""
+      >
+        {/* ======About header========= */}
+        <div id="about">
+          <div className="flex pb-5 gap-2 overflow-hidden tracking-widest items-center justify-center flex-col">
+            <h1 className=" md:font-extrabold font-bold lg:text-xl text-select ">
+              About Me
+            </h1>
+            <p className="text-white font-sans text-xs">Why Choose Me?</p>
+            <Underline></Underline>
+          </div>
+        </div>
+        {/* ========left and right col====== */}
+        <div className="left-right lg:px-4 text-sm md:flex-row overflow-hidden  flex flex-col items-center text-center bg-black text-white  md:h-[70vh] h-[100 md:w-[80%] rounded-xl md:overflow-hidden ">
+          {/* =========left col============ */}
+          <div className="overflow-hidden md:flex md:items-center text-xs md:text-sm justify-center w-[100%] ">
+            <div className="left-col  bottom-40 right-1 flex flex-col justify-center w-full items-center">
+              <div className="img rounded-full">
+                <img
+                  className=" flex rounded-full w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] "
+                  src="./src/assets/IMG_20230504_111357.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div className="tracking-widest">
+                <span>Lincoln Bassey</span> <br />
+                <span className="font-thin text-gray-400 italic">
+                  Web Developer
+                </span>
+              </div>
+              {/* ========Socialmedia contacts============ */}
+
+              <div className="social-media text-select flex md:flec-col gap-4 ">
+                <div className="contact items-center flex gap-1">
+                  <PersonOutlineIcon></PersonOutlineIcon>
+                  <a href="#" className="hidden ">
+                    +234 9129936582
+                  </a>
+                </div>
+                <div className="contact items-center flex gap-1">
+                  <MailOutlineIcon></MailOutlineIcon>
+                  <a href="#" className="hidden ">
+                    lincolnbassey1@gmail.com
+                  </a>
+                </div>
+
+                <div className="contact items-center flex gap-1">
+                  <GitHubIcon></GitHubIcon>
+                  <a href="#" className="hidden">
+                    Github
+                  </a>
+                </div>
+                <div className="contact items-center flex gap-1">
+                  <FacebookRoundedIcon></FacebookRoundedIcon>
+                  <a href="#" className="hidden ">
+                    Lincoln Bassey
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ========right col==========? */}
+
+          <div className="right-col tracking-wide text-center  md:text-start flex pb-4 pt-4  flex-col w-[100%] gap-3 md:px-1  ">
+            <h1 className="font-bold   ">Why Choose me?</h1>
+            <p className="font-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio accusantium, volu ptatum omnis, aliquid at laboriosam
+              sint obcaecati, officia illo quam quos recusandae dolores autem
+              est. Itaque consequatur dicta quas dolor.
+            </p>
+
+            <div className="features items-center md:items-start md:text-start flex flex-col gap-2 ">
+              <h2 className="text-select font-semibold">
+                Here is Few Features:
+              </h2>
+              {/* ==list of my features======== */}
+              <l className="feat-para  flex md:justify-start justify-center text-start items-center font-light flex-wrap gap-1 ">
+                <li className="feat-list ">
+                  <span className="each-feat">User Interface Design</span>
+                </li>
+                <li className="feat-list ">
+                  <span className="each-feat">User Interface Design</span>
+                </li>
+                <li className="feat-list ">
+                  <span className="each-feat">User Interface Design</span>
+                </li>
+                <li className="feat-list ">
+                  <span className="each-feat">User Interface Design</span>
+                </li>
+              </l>
+            </div>
+            {/* =======hire btn and resume btn====== */}
+            <div className="flex pt-3 justify-center md:justify-start gap-4 ">
+              <button className=" hire-btn font-semibold py-[6px] px-5 text-select rounded border-2 border-select">
+                Hire Me
+              </button>
+              <button className="resume-btn font-semibold py-[6px] px-4 border-2 border-[orange] rounded text-[orange]">
+                Get Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}

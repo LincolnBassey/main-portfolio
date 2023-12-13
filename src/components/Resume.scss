@@ -1,0 +1,78 @@
+.resume{
+
+  .left-col{
+    flex: p;
+    
+    box-shadow: 1px 1px 10px #08da988f;
+    .left-nav{
+      flex: 9;
+      
+      .edu:hover:before {
+       
+       width: 100%;
+       
+     }
+    
+      .edu::before {
+       content: '';
+       background-color: #0db064b7;
+       width: 7%;
+       height: 100%;
+       position: absolute;
+       z-index: e;
+       border-top-right-radius: 50px;
+       border-bottom-right-radius: 50px;
+       
+     }
+
+      
+      @keyframes move {
+        to{
+          width: 100%;
+        }
+        
+      }
+    }
+    .left-icon{
+      flex: 2;
+    }
+  }
+
+
+  .right-col{
+    flex: l;
+    
+
+
+    .circle-percent{
+      background: conic-gradient(#0fe 300deg, #020305 0deg);
+      width: 90px;
+      height: 90px;
+      animation: rotat 10s ease-in-out infinite;
+
+      @keyframes rotate {
+        10%{
+          background: conic-gradient(#0fe 30deg, #020305 0deg);
+        }
+        20%{
+          background: conic-gradient(#0fe 100deg, #020305 0deg);
+        }
+        50%{
+          background: conic-gradient(#0fe 200deg, #020305 0deg);
+        }
+        
+      }
+      
+    }
+    .inner-circle{
+      width: 86px;
+      height: 86px;
+    }
+
+    
+  }
+
+
+
+
+}
