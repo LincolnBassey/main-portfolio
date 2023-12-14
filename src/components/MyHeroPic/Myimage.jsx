@@ -7,7 +7,7 @@ export default function Myimage() {
         <img
           src="./src/assets/IMG_20230426_132245.jpg"
           alt=""
-          className=" object-cover w-[160px]  h-[160px] lg:w-[310px] lg:h-[310px] rounded-full"
+          className=" object-cover w-[155px]  h-[155px] lg:w-[305px] lg:h-[305px] md:h-[195px] md:w-[195px] rounded-full"
         />
       </div>
     </div>

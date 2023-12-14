@@ -4,6 +4,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import ProjectNav from "./projectList/ProjectNav";
 import Header from "./Header";
+import { GitHub } from "@mui/icons-material";
 
 export default function Project() {
   const [select, setActive] = useState("work");
@@ -114,18 +115,18 @@ export default function Project() {
 
   return (
     
-    <div className="project flex flex-col  items-center -[100vh]" id="project">
+    <div className="project text-white flex flex-col bg-black items-center md:h-[100vh] h-full" id="project">
       {/* ==========Service header======== */}
-      <div className="flex pb-10 md:pb-5 gap-1 md:gap-2 tracking-widest items-center justify-center flex-col">
-        <h1 className=" md:font-extrabold font-bold lg:text-xl text-select ">
+      <div className="flex pb-5 md:pb-5 md:gap-2 tracking-widest items-center justify-center flex-col">
+        <h1 className=" md:font-extrabold font-bold lg:text-lg text-select ">
           Projects
         </h1>
-        <p className="text-white font-sans text-xs">Check in My Latest Works</p>
+        <p className="text-white pb-[6px] font-sans text-xs">Check in My Latest Works</p>
         <Underline></Underline>
       </div>
 
       {/* ===========Work nav-menu============ */}
-      <div className="nav-menu  md:pb-10 pb-5 flex justify-center items-center">
+      <div className="nav-menu  md:pb-8 pb-5 flex justify-center items-center">
         {list.map((item) => (
           <ProjectNav
             title={item.title}
@@ -139,14 +140,22 @@ export default function Project() {
 
       {/* ========= my works========== */}
 
-      <div className="container flex flex-wrap gap-5 justify-center w-[80%] items-center ">
+      <div className="container flex flex-wrap gap-5 justify-center w-[80%] items-center">
         {data.map((d) => (
-          <div className="item bg-blue-300 relative overflow-hidden border-2 border-[#262626] rounded-lg flex   items-center justify-center w-[350px] h-[200px] md:w-[250px] md:h-[150px] ">
-            <img src={d.img} alt="" className="object-contain" />
-            <p className="absolute">{d.title}</p>
+
+          <div className="flex flex-col gap-  px-">
+            <div className="item bg-blue-300  relative overflow-hidden border-2 border-[#262626] rounded-t-xl flex items-center justify-center w-[400px] h-[250px] md:w-[280px] md:h-[150px] ">
+              <img src={d.img} alt="" className="" />
+              <p className="absolute text-[red]">{d.title}</p>
+            </div>
+            {/* =======Demo and view code btn========= */}
+            <div  className="flex gap-2 text-center justify-center">
+              <a href="#" className="px- py-2 rounded-bl-xl w-full  font-semibold bg-[red]">View Live Demo </a>
+              <a href="#" className="px- py-2 rounded-br-xl w-full font-semibold bg-[red]">View Code <GitHub className="text-select"></GitHub> </a>
+            </div>
           </div>
         ))}
-      </div>
     </div>
+      </div>
   );
 }
