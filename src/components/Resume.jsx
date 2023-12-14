@@ -109,7 +109,7 @@ export default function Resume() {
 ];
 
   return (
-    <div className="resume flex items-center justify-center flex-col">
+    <div className="resume flex text-white bg-black items-center justify-center flex-col">
       {/*=========== resume header============ */}
       <div
         className="flex pb-10 md:pb-5 gap-2 tracking-widest items-center justify-center flex-col"
@@ -122,9 +122,9 @@ export default function Resume() {
         <Underline></Underline>
       </div>
       {/* ============left-right col================ */}
-      <div className="left-right bg-red-400 flex md:flex-row flex-col gap-5 items-center justify-center lg:w-[80%] md:w-[90%] w-[95%] md:h-[80vh]  lg:h-[60vh]">
+      <div className="left-right bg-red-40 flex md:flex-row flex-col gap-5 items-center justify-center lg:w-[80%] md:w-[90%] w-[95%] md:h-[80vh]  lg:h-[60vh]">
         {/* ===========left col================= */}
-        <div className=" hidden bg-blue-500 left-col w-1/2  md:w-[250px] items-center justifty-center h-[80%] md:flex">
+        <div className=" hidden left-col w-1/2  md:w-[250px] items-center justifty-center h-[80%] md:flex">
           {/* ============left icon========== */}
           <div className="left-icon flex flex-col items-center  justify-center h-full bg-[#0db064b7]  gap-5">
             <div className="">
@@ -153,11 +153,11 @@ export default function Resume() {
             ))}
           </div>
         </div>
-        <div className="w-ful">
+        <div className="w-full md:w-fit">
           {/* ============Education btn on small screen============== */}
           <div className="md:hidden w-full bsolute">
             <button
-              nClick={() => handleclick()}
+              onClick={() => handleclick()}
               className="border-2 w-full py-2 bg-white text-orange font-bold"
             >
               Education
@@ -167,8 +167,8 @@ export default function Resume() {
           <div
             className={
               edu
-                ? "right-col bg-green-500 flex flex-col  gap-3 justify-evenl items-cente text-sm md:w-[350px]  lg:[500px] w-[300px] h-ful"
-                : " right-col  flex flex-col  gap-3 justify-center items-center text-sm"
+                ? "right-col  flex flex-col  gap-3 justify-evenl items-cente text-sm md:w-[350px]  lg:[500px]  h-ful"
+                : " right-col  hidden flex flex-col w-full gap-3 justify-center items-center text-sm"
             }
             // ============Education write top============
           >

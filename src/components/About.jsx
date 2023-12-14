@@ -13,7 +13,7 @@ export default function About() {
     <>
      
       <div
-        className="about text-sm bg-white h-[100vh] overflow-hidden md:px-10 lg:px-40 px-5"
+        className="about text-sm bg-black h-[100vh] overflow-hidden md:px-10 lg:px-40 px-5"
         id=""
       >
         {/* ======About header========= */}
@@ -22,13 +22,13 @@ export default function About() {
             <h1 className=" md:font-extrabold font-bold lg:text-xl text-select ">
               About Me
             </h1>
-            <p className=" text-black font-sans pb-2 text-xs">Why Choose Me?</p>
+            <p className=" text-white font-sans pb-2 text-xs">Why Choose Me?</p>
             <Underline></Underline>
           </div>
         </div>
-        <div className=" h-[90vh] flex items-center w-full justify-center ">
+        <div className=" h-[90vh] flex lg:items-center w-full justify-center ">
         {/* ========left and right col====== */}
-          <div className="left-right lg:px-4 px-5 text-sm md:flex-row h-full md:h-[80%] overflow-hidden gap- flex flex-col items-center justify-center text-center bg-blac text-black rounded-xl md:overflow-hidden ">
+          <div className="left-right lg:px-4 px-5 text-sm md:flex-row h-full md:h-[80%] overflow-hidden gap- flex flex-col items-center justify-center text-center bg-black text-white rounded-xl md:overflow-hidden ">
             {/* =========left col============ */}
             <div className="overflow-hidden md:flex md:items-center text-xs md:text-sm justify-center  w-[40%] ">
               <div className="left-col  flex flex-col justify-center  w-full items-center">
@@ -64,8 +64,8 @@ export default function About() {
             </div>
             {/* ========right col==========? */}
             <div className="right-col tracking-wide text-start md:text-start flex pb-4 pt-4  flex-col w-[100%] gap-5 md:px-1  ">
-              <h1 className="font-bold text-cente ">Why Choose me?</h1>
-              <p className="font-light">
+              <h1 className="font-bold md:text-start text-center ">Why Choose me?</h1>
+              <p className="text-center md:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Distinctio accusantium, volu ptatum omnis, aliquid at laboriosam
                 sint obcaecati, officia illo quam quos recusandae dolores autem
@@ -73,12 +73,12 @@ export default function About() {
                 adipisicing elit. Sunt, soluta! Lorem ipsum dolor sit amet.
                 .
               </p>
-              <div className="features items-cente md:items-start md:text-start flex flex-col gap-2 ">
-                <h2 className="text-select font-semibold">
+              <div className="features items-center md:items-start md:text-start flex flex-col gap-2 ">
+                <h2 className="text-select  font-semibold">
                   Here is Few Features:
                 </h2>
                 {/* ==list of my features======== */}
-                <l className="feat-para  flex md:justify-start  justify-cente  items-cente font-light flex-wrap gap-1 ">
+                <div className="feat-para  flex md:justify-start  justify-center  items-cente font-light flex-wrap gap-1 ">
                   <li className="feat-list ">
                     <span className="each-feat">User Interface Design</span>
                   </li>
@@ -91,7 +91,7 @@ export default function About() {
                   <li className="feat-list ">
                     <span className="each-feat">User Interface Design</span>
                   </li>
-                </l>
+                </div>
               </div>
               {/* =======hire btn and resume btn====== */}
               <div className="flex pt-3 justify-center md:justify-start gap-4 ">
