@@ -7,10 +7,10 @@ import Header from "./Header";
 
 export default function Hero() {
   return (
-    <div className=" h-[100vh] bg-black ">
+    <div className=" h-[100vh] bg-white ">
     <Header />
     <div
-      className="hero tracking-wider h-[90vh] text-white overflow-hidden flex items-center justify-center"
+      className="hero tracking-wider h-[90vh] text-black overflow-hidden flex items-center justify-center"
       id="hero"
     >
       

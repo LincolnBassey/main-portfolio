@@ -13,7 +13,7 @@ export default function About() {
     <>
      
       <div
-        className="about text-sm bg-black h-[100vh] overflow-hidden md:px-10 lg:px-40 px-5"
+        className="about text-sm bg-white h-[100vh] overflow-hidden md:px-10 lg:px-40 px-5"
         id=""
       >
         {/* ======About header========= */}
@@ -22,13 +22,13 @@ export default function About() {
             <h1 className=" md:font-extrabold font-bold lg:text-xl text-select ">
               About Me
             </h1>
-            <p className=" text-white font-sans pb-2 text-xs">Why Choose Me?</p>
+            <p className=" text-black font-sans pb-2 text-xs">Why Choose Me?</p>
             <Underline></Underline>
           </div>
         </div>
         <div className=" h-[90vh] flex items-center w-full justify-center ">
         {/* ========left and right col====== */}
-          <div className="left-right lg:px-4 px-5 text-sm md:flex-row h-full md:h-[80%] overflow-hidden gap- flex flex-col items-center justify-center text-center bg-black text-white rounded-xl md:overflow-hidden ">
+          <div className="left-right lg:px-4 px-5 text-sm md:flex-row h-full md:h-[80%] overflow-hidden gap- flex flex-col items-center justify-center text-center bg-blac text-black rounded-xl md:overflow-hidden ">
             {/* =========left col============ */}
             <div className="overflow-hidden md:flex md:items-center text-xs md:text-sm justify-center  w-[40%] ">
               <div className="left-col  flex flex-col justify-center  w-full items-center">
