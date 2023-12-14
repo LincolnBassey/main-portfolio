@@ -11,10 +11,10 @@ export default function Header() {
   const menuClick = () => setMenubar(!menubar);
 
   return (
-    <div className="header bg-black z-50 fixed px-[30px] md:px-[80px] active">
-      <div className="logo w-40 text-select font-extrabold text-2xl ">
+    <div className="header bg-black px-[10px] md:px-[80px] w-full h-[50px] active">
+      <div className="logo w-40 text-select font-extrabold text-sm md:text-2xl ">
         <a href="#hero" className="">
-          Lin.<span className="text-[#ffa600] italic text-lg">portfolio</span>
+          Lin.<span className="text-[#ffa600] italic md:text-lg">portfolio</span>
         </a>
       </div>
 

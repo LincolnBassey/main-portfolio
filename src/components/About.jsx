@@ -13,7 +13,7 @@ export default function About() {
     <>
       <Header />
       <div
-        className="about bg-black relative md:h-[90vh] h-[108vh] flex flex-col justify-center items-center overflow-hidden px-[2px] md:px-0"
+        className="about text-sm bg-black relative md:h-[90vh] h-[108vh] flex flex-col justify-center items-center overflow-hidden px-[20px] md:px-40"
         id=""
       >
         {/* ======About header========= */}
@@ -27,13 +27,13 @@ export default function About() {
           </div>
         </div>
         {/* ========left and right col====== */}
-        <div className="left-right lg:px-4 text-sm md:flex-row overflow-hidden  flex flex-col items-center text-center bg-black text-white  md:h-[70vh] h-[100 md:w-[80%] rounded-xl md:overflow-hidden ">
+        <div className="left-right lg:px-4 text-sm md:flex-row overflow-hidden gap-8 flex flex-col items-center text-center bg-black text-white  md:h-[70vh] md:w-[90%] rounded-xl md:overflow-hidden ">
           {/* =========left col============ */}
-          <div className="overflow-hidden md:flex md:items-center text-xs md:text-sm justify-center w-[100%] ">
-            <div className="left-col  bottom-40 right-1 flex flex-col justify-center w-full items-center">
+          <div className="overflow-hidden md:flex md:items-center text-xs md:text-sm justify-center w-[40%] ">
+            <div className="left-col  flex flex-col justify-center w-full items-center">
               <div className="img rounded-full">
                 <img
-                  className=" flex rounded-full w-[100px] h-[100px] lg:w-[150px] lg:h-[150px] "
+                  className=" flex rounded-full w-[80px] h-[80px] lg:w-[150px] lg:h-[150px] "
                   src="./src/assets/IMG_20230504_111357.jpg"
                   alt=""
                 />
@@ -50,28 +50,16 @@ export default function About() {
               <div className="social-media text-select flex md:flec-col gap-4 ">
                 <div className="contact items-center flex gap-1">
                   <PersonOutlineIcon></PersonOutlineIcon>
-                  <a href="#" className="hidden ">
-                    +234 9129936582
-                  </a>
                 </div>
                 <div className="contact items-center flex gap-1">
                   <MailOutlineIcon></MailOutlineIcon>
-                  <a href="#" className="hidden ">
-                    lincolnbassey1@gmail.com
-                  </a>
                 </div>
 
                 <div className="contact items-center flex gap-1">
                   <GitHubIcon></GitHubIcon>
-                  <a href="#" className="hidden">
-                    Github
-                  </a>
                 </div>
                 <div className="contact items-center flex gap-1">
                   <FacebookRoundedIcon></FacebookRoundedIcon>
-                  <a href="#" className="hidden ">
-                    Lincoln Bassey
-                  </a>
                 </div>
               </div>
             </div>
@@ -79,8 +67,8 @@ export default function About() {
 
           {/* ========right col==========? */}
 
-          <div className="right-col tracking-wide text-center  md:text-start flex pb-4 pt-4  flex-col w-[100%] gap-3 md:px-1  ">
-            <h1 className="font-bold   ">Why Choose me?</h1>
+          <div className="right-col tracking-wide text-start md:text-start flex pb-4 pt-4  flex-col w-[100%] gap-3 md:px-1  ">
+            <h1 className="font-bold  ">Why Choose me?</h1>
             <p className="font-light">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Distinctio accusantium, volu ptatum omnis, aliquid at laboriosam
@@ -88,12 +76,12 @@ export default function About() {
               est. Itaque consequatur dicta quas dolor.
             </p>
 
-            <div className="features items-center md:items-start md:text-start flex flex-col gap-2 ">
+            <div className="features items-cente md:items-start md:text-start flex flex-col gap-2 ">
               <h2 className="text-select font-semibold">
                 Here is Few Features:
               </h2>
               {/* ==list of my features======== */}
-              <l className="feat-para  flex md:justify-start justify-center text-start items-center font-light flex-wrap gap-1 ">
+              <l className="feat-para  flex md:justify-start  justify-cente  items-cente font-light flex-wrap gap-1 ">
                 <li className="feat-list ">
                   <span className="each-feat">User Interface Design</span>
                 </li>

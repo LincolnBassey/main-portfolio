@@ -16,9 +16,10 @@ function App() {
     <Routes>
       
       <Route path="/" Component={Hero}/>
-      <Route path="/service" Component={Service}/>
       <Route path="/about" Component={About}/>
-      <Route path="/project" Component={Service}/>
+      <Route path="/resume" Component={Resume}/>
+      <Route path="/project" Component={Project}/>
+      <Route path="/service" Component={Service}/>
     </Routes>
   </BrowserRouter>
   

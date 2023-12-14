@@ -3,6 +3,7 @@ import Underline from "./dynamicstyle/Underline";
 import React from "react";
 import { useState, useEffect } from "react";
 import ProjectNav from "./projectList/ProjectNav";
+import Header from "./Header";
 
 export default function Project() {
   const [select, setActive] = useState("work");
@@ -112,6 +113,7 @@ export default function Project() {
   }, [select]);
 
   return (
+    
     <div className="project flex flex-col  items-center -[100vh]" id="project">
       {/* ==========Service header======== */}
       <div className="flex pb-10 md:pb-5 gap-1 md:gap-2 tracking-widest items-center justify-center flex-col">

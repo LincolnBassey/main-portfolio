@@ -7,10 +7,10 @@ import Header from "./Header";
 
 export default function Hero() {
   return (
-    <>
+    <div className=" md:h-[90vh] lg:h-[96.6vh] h-[100vh] bg-black">
     <Header />
     <div
-      className="hero bg-[#000000] tracking-wider flex flex-col md:flex-row items-center justify-center gap-1 text-white overflow-hidden relative top-[20px] md:h-[90vh] lg:h-[96.6vh] h-[100vh]"
+      className="hero tracking-wider flex flex-col md:flex-row items-center justify-center gap-5 md:gap-2 px-4 md:px-2 text-white overflow-hidden "
       id="hero"
     >
       {/* ======heroimage========= */}
@@ -46,6 +46,6 @@ export default function Hero() {
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 }
