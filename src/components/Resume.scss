@@ -42,35 +42,23 @@
   .right-col{
     flex: l;
     
-
-
+  }
     .circle-percent{
       background: conic-gradient(#0fe 300deg, #020305 0deg);
       width: 90px;
       height: 90px;
       animation: rotat 10s ease-in-out infinite;
 
-      @keyframes rotate {
-        10%{
-          background: conic-gradient(#0fe 30deg, #020305 0deg);
-        }
-        20%{
-          background: conic-gradient(#0fe 100deg, #020305 0deg);
-        }
-        50%{
-          background: conic-gradient(#0fe 200deg, #020305 0deg);
-        }
-        
-      }
+      
       
     }
     .inner-circle{
       width: 86px;
       height: 86px;
+      
     }
 
     
-  }
 
 
 
