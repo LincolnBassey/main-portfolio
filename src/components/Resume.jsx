@@ -254,7 +254,7 @@ export default function Resume() {
       </div>
 {/* ==============Resume section for small screen============== */}
 
-<div className="md:hidden flex flex-col gap-8">
+<div className="md:hidden flex flex-col px-8 gap-8">
   {/* ===================Education============= */}
         <div className="">
           <button
